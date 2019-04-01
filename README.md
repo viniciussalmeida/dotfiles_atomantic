@@ -18,6 +18,7 @@ You don't need to install or configure anything upfront! This works with a brand
   - [Crontab](#crontab)
   - [Remap Caps-Lock](#remap-caps-lock)
 - [Settings](#settings)
+  - [Prompt Driven Configuration](#prompt-driven-configuration)
   - [SSD-specific tweaks](#ssd-specific-tweaks)
   - [General System Changes](#general-system-changes)
   - [Security](#security)
@@ -44,6 +45,7 @@ You don't need to install or configure anything upfront! This works with a brand
 - [License](#license)
 - [Contributions](#contributions)
 - [Loathing, Mehs and Praise](#loathing-mehs-and-praise)
+- [Tips Accepted](#tips-accepted)
 - [¯\\_(ツ)_/¯ Warning / Liability](#%C2%AF%5C%5C_%E3%83%84_%C2%AF-warning--liability)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
