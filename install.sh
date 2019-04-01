@@ -460,14 +460,14 @@ sudo chflags uchg /Private/var/vm/sleepimage;ok
 ################################################
 
 # running "Set computer name (as done via System Preferences → Sharing)"
-# sudo scutil --set ComputerName "antic"
-# sudo scutil --set HostName "antic"
-# sudo scutil --set LocalHostName "antic"
-# sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "antic"
+sudo scutil --set ComputerName "APPL-0x6D716971"
+sudo scutil --set HostName "APPL-0x6D716971"
+sudo scutil --set LocalHostName "APPL-0x6D716971"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "APPL-0x6D716971"
 
 # running "Disable smooth scrolling"
 # (Uncomment if you’re on an older Mac that messes up the animation)
-# defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false;ok
+defaults write NSGlobalDomain NSScrollAnimationEnabled -bool false;ok
 
 # running "Disable Resume system-wide"
 # defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false;ok
@@ -507,9 +507,9 @@ sudo chflags uchg /Private/var/vm/sleepimage;ok
 #defaults write com.apple.dock showLaunchpadGestureEnabled -int 0;ok
 
 #running "Add a spacer to the left side of the Dock (where the applications are)"
-#defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
+defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
 #running "Add a spacer to the right side of the Dock (where the Trash is)"
-#defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
+defaults write com.apple.dock persistent-others -array-add '{tile-data={}; tile-type="spacer-tile";}';ok
 
 
 ################################################
@@ -628,7 +628,7 @@ defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClic
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true;ok
 
 running "Disable 'natural' (Lion-style) scrolling"
-defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false;ok
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true;ok
 
 running "Increase sound quality for Bluetooth headphones/headsets"
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40;ok

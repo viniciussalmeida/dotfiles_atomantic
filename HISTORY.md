@@ -2,7 +2,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [Release History](#release-history)  
+- [Release History](#release-history)
   - [v5.1.0](#v510)
   - [v5.0.0](#v500)
   - [v4.4.2](#v442)
