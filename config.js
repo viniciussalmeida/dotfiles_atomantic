@@ -3,6 +3,8 @@ module.exports = {
     // http://conqueringthecommandline.com/book/ack_ag
     'ack',
     'ag',
+    // https://github.com/wting/autojump
+    'autojump',
     // alternative to `cat`: https://github.com/sharkdp/bat
     'bat',
     // Install GNU core utilities (those that come with macOS are outdated)
@@ -91,5 +93,17 @@ module.exports = {
     'trash',
     'vtop'
     // ,'yo'
-  ]
+  ],
+  mas: [
+    //com.apple.dt.Xcode (10.2.1)
+    '497799835',
+    //com.if.Amphetamine (4.1.6)
+    //'937984704',
+    //net.shinyfrog.bear (1.6.15)
+    //'1091189122',
+    //com.monosnap.monosnap (3.5.8)
+    //'540348655',
+    //com.app77.pwsafemac (4.17)
+    //'520993579',
+  ],
 };

@@ -52,7 +52,7 @@ You don't need to install or configure anything upfront! This works with a brand
 
 # Forget About Manual Configuration!
 
-Don't you hate getting a new laptop or joining a new team and then spending a whole day setting up your system preferences and tools? Me too. That's why we automate; we did it once and we don't want to do have to do it again.
+Don't you hate getting a new laptop or joining a new team and then spending a whole day setting up your system preferences and tools? Me too. That's why we automate; we did it once and we don't want to have to do it again.
 
 \\[^_^]/ - This started as [Adam Eivy](http://adameivy.com)'s MacOS shell configuration dotfiles but has grown to a multi-developer platform for machine configuration.
 
@@ -78,9 +78,10 @@ To launch fullscreen, hit `Command + Enter` in iTerm, then use `Command + d` and
 
 > Note: I recommend forking this repo in case you don't like anything I do and want to set your own preferences (and pull request them!)
 
-> REVIEW WHAT THIS SCRIPT DOES PRIOR TO RUNNING: https://github.com/atomantic/dotfiles/blob/master/install.sh#L275-L1038
+> ☢️ REVIEW WHAT THIS SCRIPT DOES PRIOR TO RUNNING: https://github.com/atomantic/dotfiles/blob/master/install.sh#L275-L1038
 > It's always a good idea to review arbitrary code from the internet before running it on your machine with sudo power!
 > You are responsible for everything this script does to your machine (see LICENSE)
+> The creator of this repo has a high tolerance for nuking his machine and starting over. If you have a low tolerance for this, proceed with caution.
 
 ```bash
 git clone --recurse-submodules https://github.com/atomantic/dotfiles ~/.dotfiles
@@ -90,6 +91,8 @@ cd ~/.dotfiles;
 ```
 * When it finishes, open iTerm and press `Command + ,` to open preferences. Under Profiles > Colors, select "Load Presets" and choose the `Solarized Dark Patch` scheme. If it isn't there for some reason, import it from `~/.dotfiles/configs` -- you may also need to select the `Hack` font and check the box for non-ascii font and set to `Roboto Mono For Powerline` (I've had mixed results for automating these settings--love a pull request that improves this)
 * I've also found that you need to reboot before fast key repeat will be enabled
+
+> Note: if you have problems cloning the submodules behind proxy, you can use this command to convert `git://` to `https://`: `git config --global url.https://github.com/.insteadOf git://github.com/`
 
 > Note: running install.sh is idempotent. You can run it again and again as you add new features or software to the scripts! I'll regularly add new configurations so keep an eye on this repo as it grows and optimizes.
 
